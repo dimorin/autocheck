@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="./css/select2.min.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>네트워크 장비 자동점검 솔루션</title> 
+</head>
+
+<body class="sub">
+  <main>
+    <div class="sub_container d-flex flex-column">
+      <h3>변동 장비</h3>
+      <div class="table_header_wrap flex-shrink-0">
+        <div class="left">
+          <div class="title">장비현황</div>
+        </div>
+      </div>
+      <div class="device_board_wrap">
+        <div id="mxBox" class="box_4_1">
+          <i class="icon mx_s" style="width:35px;"></i>
+          <p class="num">
+            <span>Router</span>
+            <em>0/10</em>
+          </p>
+        </div>
+        <div id="msBox" class="box_4_2 ml-3">
+          <i class="icon ms_s" style="width:35px;"></i>
+          <p class="num">
+            <span>L4</span>
+            <em>0/5</em>
+          </p>
+        </div>
+        <div id="mrBox" class="box_4_3 ml-3">
+          <i class="icon mr_s" style="width:35px;"></i>
+          <p class="num">
+            <span>L3</span>
+            <em>0/20</em>
+          </p>
+        </div>
+        <div id="mvBox" class="box_4_4 ml-3">
+          <i class="icon mv_s" style="width:35px;"></i>
+          <p class="num">
+            <span>L2</span>
+            <em>0/80</em>
+          </p>
+        </div>
+      </div>
+      <div class="table_header_wrap flex-shrink-0">
+        <div class="left">
+          <div class="title">장비</div>
+        </div>
+      </div>
+      <div class="position-relative sticky_wrap flex-grow-1">
+        <div class="sticky_box scrollbar h-100">
+          <div style="height:0px;">
+            <table class="vertical sticky">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>장비명</th>
+                  <th>항목1</th>
+                  <th>항목2</th>
+                  <th>항목3</th>
+                  <th>항목4</th>
+                  <th>항목5</th>
+                  <th>항목6</th>
+                  <th>항목7</th>
+                  <th>항목8</th>
+                  <th>항목9</th>
+                  <th>항목10</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center"><i class="ic mv_blue"></i></td>
+                  <td class="text-left">AQ-HQ-FW</td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><i class="ic mx_blue"></i></td>
+                  <td class="text-left">AQ-HQ-FW</td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><i class="ic mv_blue"></i></td>
+                  <td class="text-left">AQ-HQ-FW</td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><i class="ic ms_blue"></i></td>
+                  <td class="text-left">AQ-HQ-FW</td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><i class="ic mv_blue"></i></td>
+                  <td class="text-left">AQ-HQ-FW</td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><i class="ic mx_blue"></i></td>
+                  <td class="text-left">AQ-HQ-FW</td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><i class="ic mv_blue"></i></td>
+                  <td class="text-left">AQ-HQ-FW</td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><i class="ic ms_blue"></i></td>
+                  <td class="text-left">AQ-HQ-FW</td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><i class="ic mv_blue"></i></td>
+                  <td class="text-left">AQ-HQ-FW</td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><i class="ic mx_blue"></i></td>
+                  <td class="text-left">AQ-HQ-FW</td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><i class="ic mv_blue"></i></td>
+                  <td class="text-left">AQ-HQ-FW</td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><i class="ic ms_blue"></i></td>
+                  <td class="text-left">AQ-HQ-FW</td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><i class="ic mv_blue"></i></td>
+                  <td class="text-left">AQ-HQ-FW</td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><i class="ic mx_blue"></i></td>
+                  <td class="text-left">AQ-HQ-FW</td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><i class="ic mv_blue"></i></td>
+                  <td class="text-left">AQ-HQ-FW</td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><i class="ic ms_blue"></i></td>
+                  <td class="text-left">AQ-HQ-FW</td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><i class="ic mv_blue"></i></td>
+                  <td class="text-left">AQ-HQ-FW</td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><i class="ic mx_blue"></i></td>
+                  <td class="text-left">AQ-HQ-FW</td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><i class="ic mv_blue"></i></td>
+                  <td class="text-left">AQ-HQ-FW</td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><i class="ic ms_blue"></i></td>
+                  <td class="text-left">AQ-HQ-FW</td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                  <td class="text-center"><span class="compare">O</span></td>
+                  <td class="text-center"><span class="compare">X</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="table_footer_wrap flex-shrink-0">
+        <div class="total_wrap">
+          <span>총</span>
+          <span class="total">10</span>
+          <span>개</span>
+        </div>
+        <div class="pagenation_wrap">
+          <button class="btn_page mx-1"><span
+              class="material-symbols-outlined">keyboard_double_arrow_left</span></button>
+          <button class="btn_page mx-1"><span class="material-symbols-outlined">keyboard_arrow_left</span></button>
+          <div class="page_num mx-3">
+            <span class="current_page">1</span>
+            <span>/</span>
+            <span class="total_page">4</span>
+          </div>
+          <button class="btn_page mx-1"><span class="material-symbols-outlined">keyboard_arrow_right</span></button>
+          <button class="btn_page mx-1"><span
+              class="material-symbols-outlined">keyboard_double_arrow_right</span></button>
+        </div>
+        <select class="tunnel_filter page_num" name="">
+          <option value="10">10개씩</option>
+          <option value="30">30개씩</option>
+          <option value="50">50개씩</option>
+        </select>
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+  <script src="./js/jquery-3.0.0.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/bootstrap-datepicker.min.js"></script>
+  <script src="./js/bootstrap-datepicker.ko.min.js"></script>
+  <script src="./js/select2.min.js"></script>
+  <script src="./js/common.js"></script>
+  <script>
+    var pWindow;
+    var loading_spinner;
+    $(function () {
+      initData();
+      initEventListener();
+      loading_spinner.hide();
+    });
+
+    function initData() {
+      pWindow = parent;
+      loading_spinner = pWindow.loading_spinner;
+    }
+
+    function initEventListener() {
+
+      $('.tunnel_filter.page_num').select2({
+        width: 90,
+        minimumResultsForSearch: Infinity
+      });
+      $('.compare').on('click', function () {
+        pWindow.openModal('compareModal');
+      });
+    }
+  </script>
+</body>
+
+</html>

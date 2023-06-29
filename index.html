@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>네트워크 장비 자동점검 솔루션</title> 
+</head>
+<body class="">
+  <div class="center_box">
+    <header> 
+      <div class="left_wrap">
+        <button class="btn_logo" onclick="javascript:goPage('main')"><img src="./img/header_logo.svg" alt="AIRQUAY"></button>
+      </div>
+      <span class="projectname">네트워크 장비 자동점검 시스템</span>
+      <div class="right_wrap">
+        <div class="input_search_wrap">
+          <input type="text" name="keyword" id="" class="tunnel_input search nooutline" placeholder="업무명을 입력해주세요">
+          <button class="btn_search nooutline"><span class="material-symbols-outlined">search</span></button>
+        </div>
+        <span class="d-inline-block text-white ml-4">홍길동</span>
+        <button class="btn_alert dropdown-toggle d-inline-block position-relative ml-4" data-toggle="dropdown" title="알림">
+          <span class="material-symbols-outlined">notifications</span>
+          <span class="position-absolute badge badge-danger" style="right:-10px;top:-10px;">0</span>
+        </button>        
+        <ul class="dropdown-menu dropdown-menu-right tunnel_scrollbar">
+          <li>            
+            <div>
+              <span class="num">알람내용1</span>
+            </div>
+            <div class="date">2023.03.30 00:00:00</div>
+          </li>
+          <li>
+            <div>
+              <span class="num">알람내용2</span>
+            </div>
+            <div class="date">2023.03.30 00:00:00</div>
+          </li>
+          <li>
+            <div>
+              <span class="num">알람내용3</span>
+            </div>
+            <div class="date">2023.03.30 00:00:00</div>
+          </li>                       
+        </ul>
+        
+        <button class="btn_logout ml-4" title="로그아웃"><span class="material-symbols-outlined">logout</span></button>
+      </div>
+    </header>
+    
+    
+    <iframe id="ContentFrame" src="./main.html" title="">		
+    </iframe>
+  </div>
+  
+ 
+  <!-- compareModal -->
+  <div class="modal fade" id="compareModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">
+            <span class="material-symbols-outlined">terminal</span>
+            <div class="d-inline-flex align-items-center ml-2">
+              <span>항목 (sh interfaces</span>
+              <span class="bar mx-2">|</span>
+              <span>inc up</span>
+              <span class="bar mx-2">|</span>
+              <span>CRC)</span>
+            </div>
+          </h5>
+          <div class="d-flex align-items-center">
+            <div class="count_wrap mr-3">
+              <span>(총 </span>
+              <span class="count">3</span>
+              <span>곳)</span>
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span class="material-symbols-outlined">close</span>
+            </button>
+          </div>          
+        </div>
+        <div class="modal-body">
+          <div class="compare_wrap">
+            <div class="compare_section">
+              <div class="compare_isorigin">new</div>
+              <div class="compare_box new scrollbar">
+                  <div>Vlan1 is up, line protocol is up</div>
+                  <div>Vlan2 is up, line protocol is <span class="diff">down</span></div>
+                  <div>Vlan4 is up, line protocol is up</div>
+                  <div>GigabitEthernet1/0/1 is up, line protocol is <span class="diff">down</span> (connected)</div>
+                  <div><span class="diff">GigabitEthernet1/0/4 is up, line protocol is up (connected) GigabitEthernet1/0/4 is up, line protocol is up (connected) GigabitEthernet1/0/4 is up, line protocol is up (connected) GigabitEthernet1/0/4 is up, line protocol is up (connected) GigabitEthernet1/0/4 is up, line protocol is up (connected) GigabitEthernet1/0/4 is up, line protocol is up (connected)</span></div>
+                  <div>GigabitEthernet1/0/5 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/6 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/7 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/8 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/9 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/10 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/11 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/12 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/13 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/14 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/15 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/16 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/17 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/18 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/19 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/20 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/21 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/22 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/23 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/24 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/25 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/26 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/27 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/28 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/29 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/30 is up, line protocol is up (connected)</div>
+                
+              </div>
+            </div>            
+            <div class="flex-grow-0 flex-shrink-0 m-10px"></div>
+            <div class="compare_section">
+              <div class="compare_isorigin">old</div>
+              <div class="compare_box old scrollbar">
+                  <div>Vlan1 is up, line protocol is up</div>
+                  <div>Vlan2 is up, line protocol is <span class="diff">up</span></div>
+                  <div>Vlan4 is up, line protocol is up</div>
+                  <div>GigabitEthernet1/0/1 is up, line protocol is <span class="diff">up</span> (connected)</div>
+                  <div><span class="diff">-</span></div>
+                  <div>GigabitEthernet1/0/5 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/6 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/7 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/8 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/9 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/10 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/11 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/12 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/13 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/14 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/15 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/16 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/17 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/18 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/19 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/20 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/21 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/22 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/23 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/24 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/25 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/26 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/27 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/28 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/29 is up, line protocol is up (connected)</div>
+                  <div>GigabitEthernet1/0/30 is up, line protocol is up (connected)</div>
+                
+              </div>
+            </div>            
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- loading -->
+  <div class="loading_spinner">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <script src="./js/jquery-3.0.0.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>   
+  <script src="./js/common.js"></script>
+  <script>
+    var loading_spinner;
+    var pWindow;
+    $(function(){
+      initData();   	
+      loading_spinner = $('.loading_spinner');      
+    });
+    function initData(){
+	        pWindow = this;
+	  }
+
+    function openModal(target){
+	    $("#"+target).modal('show');
+    }
+    function hideModal(target){
+      $("#"+target).modal('hide');
+    }
+
+    function goPage(pageName){        
+      if(pageName == 'main'){			
+        
+        $('#ContentFrame').attr('src', './main.html');
+
+      }else if(pageName == 'changedevice'){
+        
+        $('#ContentFrame').attr('src', './changedevice.html');   
+      }else if(pageName == 'totaldevice'){
+        
+        $('#ContentFrame').attr('src', './totaldevice.html');          
+
+      }else if (pageName == 'checkhistory'){
+        
+        $('#ContentFrame').attr('src', './checkhistory.html');
+      }
+    }
+
+    function doLogout(){
+    		var url = "/cm/crowd/doLogout";
+    		var param = {};
+    		$.ajax({
+    			url:url,
+    			type : 'POST',
+    			dataType:'json',
+    			data : JSON.stringify(param),
+    			contentType: 'application/json',
+    			success : function(data){
+    				location.reload();
+    			},
+    			error : function(data){
+    				alert("Logout 실패");
+    			}
+    		});
+    	}
+  </script>
+</body>
+</html>
